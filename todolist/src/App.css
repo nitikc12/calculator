@@ -1,0 +1,66 @@
+/* General form layout */
+form {
+  width: 100%; /* Set a fixed width for the form */
+  /* margin: 30px auto; Center the form horizontally */
+  display: flex;
+  flex-direction: column; /* Stack form fields vertically */
+  gap: 20px; /* Add space between form elements */
+}
+
+/* Name fields container (First, Middle, Last name) */
+.name-fields {
+  display: flex;
+  flex-direction: row; /* Stack inputs vertically */
+  gap: 100px; /* Space between inputs */
+}
+
+/* Other fields container (Date, Select, Address, Number) */
+.other-fields,
+.other-fields2 {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 10px; /* Space between inputs */
+}
+.other-fields {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin-left: 10px;
+}
+.other-fields2 {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin-left: 10px;
+}
+
+/* Style for all inputs and select elements */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%; /* Make inputs take up 100% of the form container width */
+  max-width: 100%;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  font-size: 14px; /* Slightly smaller font size */
+}
+
+/* Button styling */
+.add-btn {
+  width: 80px; /* Button takes up 100% of the form width */
+  height: 40px; /* Set a reasonable button height */
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+.add-btn:hover {
+  background-color: #45a049; /* Change button color on hover */
+}
